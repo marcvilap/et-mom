@@ -1,0 +1,195 @@
+---
+import Layout from '$layouts/Layout.astro'
+import SvgMom from '$assets/icons/mom.svg'
+import vidFire from '$assets/videos/fire.webm'
+import img01 from '$assets/images/img-01.webp'
+import img02 from '$assets/images/img-02.webp'
+import img03 from '$assets/images/img-03.webp'
+import img04 from '$assets/images/img-04.webp'
+import img05 from '$assets/images/img-05.webp'
+import img06 from '$assets/images/img-06.webp'
+import img07 from '$assets/images/img-07.webp'
+import img08 from '$assets/images/img-08.webp'
+import img09 from '$assets/images/img-09.webp'
+import img10 from '$assets/images/img-10.webp'
+import img11 from '$assets/images/img-11.webp'
+import img12 from '$assets/images/img-12.webp'
+import img13 from '$assets/images/img-13.webp'
+import { Image } from 'astro:assets'
+---
+
+<Layout>
+	<section class="reveal group relative">
+		<Image class="absolute top-0 left-0 size-full object-cover" src={img01} alt="" />
+		<div class="relative container flex min-h-screen flex-col pt-20">
+			<a class="flex shrink-0 self-start" href="/">
+				<span class="w-20 font-serif text-sm uppercase">A fuego lento</span>
+				<span><span class="mb-1 block text-xs">Un proyecto de</span><SvgMom class="w-32" /></span>
+			</a>
+			<div class="grid grow items-center gap-x-8 gap-y-12 py-24 md:grid-cols-2 xl:gap-x-24">
+				<div>
+					<h1 class="group-reveal:opacity-0 group-reveal:-translate-x-48 font-serif text-5xl uppercase opacity-60 md:text-6xl">Un viaje por las raíces:</h1>
+					<h2 class="group-reveal:opacity-0 group-reveal:-translate-x-48 group-revealed:delay-100 my-8 font-serif text-3xl opacity-60">Desde el huerto hasta la mesa</h2>
+					<p class="group-reveal:opacity-0 group-reveal:-translate-x-48 group-revealed:delay-200 text-lg">En el corazón del barrio de Salamanca, en Madrid, emerge <a class="underline" href="https://bancalrestaurante.com">Bancal</a>, un nuevo restaurante gastronómico que invita a los comensales a vivir una experiencia que va mucho más allá de lo culinario.</p>
+				</div>
+				<div>
+					<Image class="group-reveal:opacity-0 group-reveal:scale-75 w-full" src={img02} width={744} densities={[2]} alt="" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="relative">
+		<video class="absolute top-0 left-0 size-full object-cover opacity-25" src={vidFire} loop autoplay muted playsinline></video>
+		<div class="relative container grid gap-y-12 pt-24">
+			<div class="reveal group grid items-center gap-x-8 gap-y-12 md:grid-cols-2 lg:gap-x-24">
+				<div class="group-reveal:opacity-0 group-reveal:scale-75 lg:pl-24">
+					<Image class="w-full" src={img03} width={600} densities={[2]} alt="" />
+				</div>
+				<div class="group-reveal:opacity-0 group-reveal:translate-x-48 lg:pr-24">
+					<p class="text-lg">Situado en un elegante palacete rodeado de uno de los centros financieros más vibrantes de la ciudad, Bancal combina tradición e innovación con una propuesta única basada en la cocina de fuego y la sostenibilidad.</p>
+				</div>
+			</div>
+			<div class="reveal group grid items-center gap-x-8 gap-y-12 md:grid-cols-2 xl:gap-x-24">
+				<div class="group-reveal:opacity-0 group-reveal:-translate-x-48">
+					<h2 class="-mr-9 mb-12 font-serif text-5xl uppercase opacity-60 md:text-6xl">Cocina de fuego y de temporada</h2>
+					<p class="text-lg">Lo primero que sorprende al cruzar sus puertas es el aroma embriagador que emana de sus brasas, donde cada <strong>plato cobra vida con un sabor intenso y una autenticidad</strong> que conecta al comensal con las raíces de la mejor tradición culinaria. Miguel F. Vidal, chef ejecutivo con una amplia trayectoria, lidera un equipo apasionado por los productos locales y las técnicas ancestrales.</p>
+				</div>
+				<div class="group-reveal:opacity-0 group-reveal:translate-x-48 lg:pl-24">
+					<Image class="w-full" src={img04} width={600} densities={[2]} alt="" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container py-24">
+			<div class="grid gap-x-8 gap-y-12 overflow-clip bg-white/5 p-8 lg:gap-y-24 lg:p-16">
+				<div class="reveal group grid items-center gap-y-8 md:grid-cols-2">
+					<div class="group-reveal:opacity-0 group-reveal:scale-75">
+						<Image class="w-full" src={img05} width={800} densities={[2]} alt="" />
+					</div>
+					<div class="group-reveal:opacity-0 group-reveal:translate-x-48 md:pl-8 xl:pl-24">
+						<p class="text-lg">La propuesta culinaria de Bancal es tan diversa como deliciosa, destacando por su enfoque en la <strong>calidad y la estacionalidad de los productos</strong>. Entre los bocados individuales, sobresalen la ostra a la brasa con escabeche de codorniz o la torrija salada de picaña madurada con caviar. Los entrantes son un homenaje a la creatividad y las tradiciones, con opciones como las patatas a la importancia con jugo de manitas y morcilla crujiente, o el pak choi al Josper con curry verde thai.</p>
+					</div>
+				</div>
+				<div class="reveal group grid items-center gap-y-8 md:grid-cols-2">
+					<div class="group-reveal:opacity-0 group-reveal:scale-75 md:order-2">
+						<Image class="w-full" src={img06} width={800} densities={[2]} alt="" />
+					</div>
+					<div class="group-reveal:opacity-0 group-reveal:-translate-x-48 md:pr-8 xl:pr-24">
+						<p class="text-lg">Del mar llegan joyas como el rodaballo a la brasa estilo Guetaria o el pulpo con espuma de patata y kimchi, mientras que del campo destacan platos como las albóndigas de vaca madurada con foie o el entrecot Discarlux.</p>
+					</div>
+				</div>
+				<div class="reveal group grid items-center gap-y-8 md:grid-cols-2">
+					<div class="group-reveal:opacity-0 group-reveal:scale-75">
+						<Image class="w-full" src={img07} width={800} densities={[2]} alt="" />
+					</div>
+					<div class="group-reveal:opacity-0 group-reveal:translate-x-48 md:pl-8 xl:pl-24">
+						<p class="text-lg">Y para cerrar, postres como el coulant de avellana con helado de vainilla de Madagascar o la tarta de queso ahumado San Simón deleitan a los más golosos. En Bancal, <strong>cada bocado es una celebración de los sentidos</strong>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="relative">
+		<div class="reveal group relative top-0 container grid items-center gap-y-12 py-24 md:grid-cols-2 lg:sticky lg:min-h-screen">
+			<div class="group-reveal:opacity-0 group-reveal:-translate-y-48">
+				<h2 class="font-serif text-5xl uppercase opacity-60 md:text-6xl">Productos frescos de su propio huerto</h2>
+			</div>
+			<div class="group-reveal:opacity-0 group-reveal:translate-y-48 grid gap-6 text-lg md:pl-8 xl:pr-16 xl:pl-24">
+				<p>Pero Bancal no se detiene en la cocina. Su carta, en constante evolución, es un reflejo de la temporada y de los productos que provienen de sus propios huertos urbanos. El primero, ubicado en el restaurante de Serrano, sirve como un recordatorio visible de su compromiso con la sostenibilidad.</p>
+				<p>El segundo, en su sede de El Pardo, abarca más de una hectárea donde se cultivan frutas, verduras y hierbas que llegan frescas a la mesa. Esta filosofía del huerto a la mesa no solo minimiza el impacto ambiental, sino que también educa al comensal sobre el origen y el valor de los alimentos...</p>
+			</div>
+		</div>
+		<Image class="pointer-events-none w-full max-lg:absolute max-lg:top-0 max-lg:left-0 max-lg:size-full max-lg:object-cover lg:-mt-[100vh]" src={img08} width={1920} alt="" />
+	</section>
+
+	<section>
+		<div class="container py-24">
+			<div class="bg-white/5 p-8 lg:p-16">
+				<h2 class="mx-auto mb-12 max-w-172 text-center font-serif text-5xl uppercase opacity-60 md:text-6xl">Un espacio para todo tipo de eventos</h2>
+				<p class="mx-auto max-w-xl text-center text-lg">La experiencia en Bancal trasciende lo gastronómico. Cada estancia del restaurante ha sido diseñada para ofrecer un ambiente acogedor y sofisticado, convirtiéndolo en un espacio versátil que lo convierten en el lugar ideal para organizar todo tipo de celebraciones:</p>
+
+				<div class="mt-12 grid gap-x-8 gap-y-12 md:mt-40 md:grid-cols-2 xl:gap-x-24">
+					<div class="reveal group relative">
+						<Image class="group-reveal:opacity-0 group-reveal:scale-75 aspect-4/3 w-full object-cover max-md:mb-8" src={img09} width={800} alt="" />
+						<p class="md:absolute md:-top-16 md:left-full md:ml-8 md:w-76 lg:ml-40">
+							<span class="group-reveal:opacity-0 group-reveal:scale-75 group-revealed:delay-200 block">El <strong>Salón Central</strong>, perfecto para dar la bienvenida, comunica de manera directa con la terraza y con otros dos salones que componen el restaurante.</span>
+							<span class="group-reveal:opacity-0 group-revealed:delay-400 absolute top-4 right-full mr-8 h-32 w-64 border-t border-l max-md:hidden">
+								<span class="absolute -bottom-2 -left-2 size-4 rounded-full bg-white">
+									<span class="absolute size-full animate-ping rounded-full bg-white"></span>
+								</span>
+							</span>
+						</p>
+					</div>
+					<div class="reveal group relative md:-translate-y-12 md:pt-48 md:pr-8 xl:pr-24">
+						<Image class="group-reveal:opacity-0 group-reveal:scale-75 aspect-4/3 w-full object-cover max-md:mb-8 md:aspect-square" src={img10} width={800} alt="" />
+						<p class="md:absolute md:mt-16 md:w-76">
+							<span class="group-reveal:opacity-0 group-reveal:scale-75 group-revealed:delay-200 block">El <strong>Salón con vistas al huerto</strong>, situado junto al Salón Central, debe su nombre a las vistas hacia el huerto ubicado en la terraza del edificio.</span>
+							<span class="group-reveal:opacity-0 group-revealed:delay-400 absolute right-1/2 bottom-full mb-8 h-20 border-l max-md:hidden">
+								<span class="absolute -bottom-2 -left-2 size-4 rounded-full bg-white">
+									<span class="absolute size-full animate-ping rounded-full bg-white"></span>
+								</span>
+							</span>
+						</p>
+					</div>
+					<div class="reveal group relative md:pr-8 xl:pr-24">
+						<Image class="group-reveal:opacity-0 group-reveal:scale-75 aspect-4/3 w-full object-cover max-md:mb-8 md:aspect-square" src={img11} width={800} alt="" />
+						<p class="md:absolute md:bottom-8 md:left-full md:w-76 md:max-xl:ml-16">
+							<span class="group-reveal:opacity-0 group-reveal:scale-75 group-revealed:delay-200 block">El <strong>Salón Chimenea</strong> para los días de invierno, con vistas a la terraza y una chimenea decorativa que crea un ambiente acogedor ideal para eventos privados.</span>
+							<span class="group-reveal:opacity-0 group-revealed:delay-400 absolute top-1/2 right-full mr-8 w-24 border-t max-md:hidden">
+								<span class="absolute -bottom-2 -left-2 size-4 rounded-full bg-white">
+									<span class="absolute size-full animate-ping rounded-full bg-white"></span>
+								</span>
+							</span>
+						</p>
+					</div>
+					<span class="max-md:hidden"></span>
+					<span class="max-md:hidden"></span>
+					<div class="reveal group relative">
+						<Image class="group-reveal:opacity-0 group-reveal:scale-75 aspect-4/3 w-full object-cover max-md:mb-8" src={img12} width={800} alt="" />
+						<p class="md:absolute md:top-32 md:right-full md:mr-24 md:w-76">
+							<span class="group-reveal:opacity-0 group-reveal:scale-75 group-revealed:delay-200 block">La <strong>Sala I+D</strong>, equipada con cocina, chimenea y material audiovisual, es perfecta para eventos únicos como sesiones de showcooking o degustaciones de menús.</span>
+							<span class="group-reveal:opacity-0 group-revealed:delay-400 absolute bottom-full left-1/2 mb-8 h-12 w-72 border-t border-l max-md:hidden">
+								<span class="absolute -bottom-2 -left-2 size-4 rounded-full bg-white">
+									<span class="absolute size-full animate-ping rounded-full bg-white"></span>
+								</span>
+							</span>
+						</p>
+					</div>
+					<div class="reveal group relative">
+						<Image class="group-reveal:opacity-0 group-reveal:scale-75 aspect-4/3 w-full object-cover max-md:mb-8" src={img13} width={800} alt="" />
+						<p class="md:absolute md:bottom-8 md:left-full md:ml-24 md:w-76">
+							<span class="group-reveal:opacity-0 group-reveal:scale-75 group-revealed:delay-200 block">La <strong>Terraza</strong>, un oasis en el centro de Madrid, permite disfrutar al aire libre de una oferta gastronómica genuina. Con vistas al huerto urbano que abastece la cocina, también se adapta a las necesidades de cada cliente para eventos personalizados.</span>
+							<span class="group-reveal:opacity-0 group-revealed:delay-400 absolute top-1/2 right-full mr-8 w-24 border-t max-md:hidden">
+								<span class="absolute -bottom-2 -left-2 size-4 rounded-full bg-white">
+									<span class="absolute size-full animate-ping rounded-full bg-white"></span>
+								</span>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="reveal group container grid items-center gap-y-12 md:grid-cols-2">
+			<div class="md:border-r md:border-white/25 md:py-16 md:pr-8 xl:pr-24">
+				<p class="group-reveal:opacity-0 group-reveal:-translate-x-48 text-xl">En un mundo donde la gastronomía parece alejarse cada vez más de sus orígenes, <strong>Bancal se erige como un homenaje a las tradiciones y al respeto por la tierra</strong>. Un lugar donde el fuego cobra protagonismo, donde los ingredientes cuentan historias y donde cada bocado conecta con nuestras raíces más profundas.</p>
+			</div>
+			<div class="md:py-16 md:pl-8 xl:pl-24">
+				<h3 class="group-reveal:opacity-0 group-reveal:translate-x-48 font-serif text-4xl opacity-60 xl:text-balance">Si buscas una experiencia que despierte los sentidos y alimente el alma, Bancal es, sin duda, una parada obligatoria en Madrid.</h3>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container py-24 text-center">
+			<p class="opacity-60">ElTiempo Content para</p>
+			<SvgMom class="mx-auto mt-4 w-40" />
+		</div>
+	</footer>
+</Layout>
